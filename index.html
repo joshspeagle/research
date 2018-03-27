@@ -20,14 +20,27 @@
     </section>
 
     <section class="main-content">
+
+      <h3>
+	<a id="sampling" class="anchor" href="#sampling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sampling Methods</h3>
+      <p>
+	Most of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. These models can be complex, depending on many parameters and requiring lots of computational effort to generate. This can make it difficult to compare our models to data within the context of <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">Bayesian inference</a>. As a result, many researchers use <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method/">Monte Carlo methods</a> such as <a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo/">MCMC</a> to generate efficient parameter samples that can be used to make quantitative statements about the underlying model.
+      </p>
+      <p>
+	I currently work on developing and improving methods for sampling from complex, multi-modal distributions in high-dimensional spaces (i.e. lots of parameters).
+      </p>
+      <figure>
+	<img src="sampling.png" alt="Various sampling methods">
+	<figcaption>Various sampling methods implemented in the Dynamic Nested Sampling code <a href="https://dynesty.readthedocs.io">dynesty</a>.</figcaption>
+      </figure>
       
       <h3>
 	<a id="photo-z" class="anchor" href="#photo-z" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Photometric Redshifts</h3>
       <p>
-	Before we can derive many intrinsic properties of a galaxy (luminosity, stellar mass, etc.), we first need to know how far away it is from us. This is most often derived using a galaxy's measured redshift (z), which we can convert to a physical distance based on our current understanding of cosmology. While deriving redshifts from spectroscopy is straightforward, obtaining good spectra is expensive and time-consuming. As a result, in order to study the evolution of hundreds of millions of galaxies collected in modern surveys, astronomers are forced to rely on ''photometric redshifts'' derived solely from multi-band imaging data. Obtaining accurate photometric redshifts are crucial for ongoing/future wide-field surveys (e.g., <a href="http://hsc.mtk.nao.ac.jp/ssp/">HSC</a>, <a href="http://www.darkenergysurvey.org/">DES</a>, <a href="http://kids.strw.leidenuniv.nl/">KiDS</a>, <a href="http://www.euclid-ec.org/">Euclid</a>, <a href="https://www.lsst.org/">LSST</a>, <a href="http://wfirst.gsfc.nasa.gov/">WFIRST</a>), which depend heavily on them to reach their target science goals.
+	Before we can derive many intrinsic properties of a galaxy (luminosity, stellar mass, etc.), we first need to know how far away it is from us. This is most often derived using a galaxy's measured redshift (z), which we can convert to a physical distance based on our current understanding of cosmology. While deriving redshifts from spectroscopy is straightforward, obtaining good spectra is expensive and time-consuming. As a result, in order to study the evolution of hundreds of millions of galaxies collected in modern surveys, astronomers are forced to rely on ''photometric redshifts'' (photo-z's) derived solely from multi-band imaging data. Obtaining accurate photometric redshifts are crucial for ongoing/future wide-field surveys (e.g., <a href="http://hsc.mtk.nao.ac.jp/ssp/">HSC</a>, <a href="http://www.darkenergysurvey.org/">DES</a>, <a href="http://kids.strw.leidenuniv.nl/">KiDS</a>, <a href="http://www.euclid-ec.org/">Euclid</a>, <a href="https://www.lsst.org/">LSST</a>, <a href="http://wfirst.gsfc.nasa.gov/">WFIRST</a>), which depend heavily on them to reach their target science goals.
       </p>
       <p>
-	My work on photometric redshifts focuses on developing quick yet robust probabilistic approaches for conducting joint redshift inference between unknown individual objects and their parent (sub)populations using pre-existing spectroscopic datasets. As these data are often [1] heterogeneously populated, [2] sparsely sampled, [3] heavily biased, and [4] randomly censored, this represents a significant challenge for both machine learning and statistical modeling. My current efforts can be found <a href="https://github.com/joshspeagle/frankenz/">here</a>.
+	My work on photometric redshifts focuses on developing quick yet robust probabilistic approaches for inferring photo-z's based on pre-existing spectroscopic datasets. As these data are often [1] heterogeneously populated, [2] sparsely sampled, [3] heavily biased, and [4] randomly censored, this represents a significant challenge for both machine learning and statistical modeling.
       </p>
       <figure>
 	<img src="PhotoZ2.png" alt="Redshifting of a spectrum">
@@ -40,7 +53,7 @@
 	Deriving the underlying physical properties of an observed galaxy requires sophisticated modeling of its <a href="http://coolwiki.ipac.caltech.edu/index.php/SED_plots">spectral energy distribution</a> (SED). Most often, astronomers fit synthetic model spectra derived from <a href="http://www.sedfitting.org/SED08/Models.html">stellar evolution models</a> to either an observed spectrum or collection of broadband photometry. By fitting spectra derived from a variety of underlying parameters (star formation history, metallicity, dust content, etc.), we are able infer constraints of these parameters based on the observed data. <a href="http://www.sedfitting.org/SED08/Welcome.html">Currently available SED fitting methods</a>, however, have had difficulty keeping pace with the increasing quantity and quality of data from large surveys. In particular, most are not able to incorporate complementary constraints from photometric data, (sub)population-level information, and intrinsic variability in physical properties.
       </p>
       <p>
-	I am involved with efforts within <a href="http://scholar.harvard.edu/cconroy/home/">Charlie Conroy</a>'s group to develop a more rigorous, Bayesian-oriented approach to SED fitting (<a href="https://github.com/bd-j/prospector">Prospector</a>). This work involves developing tools to simultaneously model spectroscopic and photometric data, flux calibration uncertainties, and correlated noise/priors. I am also working on leveraging spatial correlations present in integral field spectroscopic data to better model <a href="http://www.sdss.org/surveys/manga/">SDSS-IV MaNGA</a> spectra. My current efforts can be found <a href="https://github.com/joshspeagle/prospector/">here</a>.
+	I am involved with efforts within <a href="http://scholar.harvard.edu/cconroy/home/">Charlie Conroy</a>'s group to develop a more rigorous, Bayesian-oriented approach to SED fitting (<a href="https://github.com/bd-j/prospector">Prospector</a>). This work involves developing tools to simultaneously model spectroscopic and photometric data, flux calibration uncertainties, and correlated noise/priors.
       </p>
       <figure>
 	<img src="sed_ingredients.png" alt="Ingredients of a synthetic SED">
@@ -48,7 +61,7 @@
       </figure>
 
       <footer class="site-footer">
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. Last updated March 21, 2017.</span>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. Last updated March 27, 2018.</span>
       </footer>
 
     </section>
