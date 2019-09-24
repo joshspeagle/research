@@ -19,31 +19,58 @@
     </section>
 
     <section class="main-content">
-      <a href="https://joshspeagle.github.io/research/#gal-struc" class="btn">Galactic Structure</a>
+      <a href="https://joshspeagle.github.io/research/#milky-way" class="btn">Milky Way</a>
+      <a href="https://joshspeagle.github.io/research/#gal-evol" class="btn">Galaxy Evolution</a>
+      <a href="https://joshspeagle.github.io/research/#cosmo" class="btn">Cosmology</a>
       <a href="https://joshspeagle.github.io/research/#sed-fit" class="btn">SED Fitting</a>
       <a href="https://joshspeagle.github.io/research/#inference" class="btn">Inference</a>
-      <a href="https://joshspeagle.github.io/research/#photo-z" class="btn">Photo-z's</a>
 
       <h3>
-	<a id="gal-struc" class="anchor" href="#gal-struc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galactic Structure</h3>
+	<a id="gal-struc" class="anchor" href="#milky-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galactic Structure and Dynamics</h3>
       <p>
-	Our <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way Galaxy</a> is comprised of roughly 200 billion stars. These stars trace Galactic structure and serve as records of the formation history of the Galaxy. Studying them, however, is challenging because we can't tell, e.g., how old they are or how far away they are from us from just images of the sky (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). This is made even more difficult because the Galaxy is also filled with <a href="https://en.wikipedia.org/wiki/Cosmic_dust">cosmic dust</a>, which <a href="https://en.wikipedia.org/wiki/Extinction_(astronomy)">blocks and ''reddens''</a> the light from many of these stars. Studying Galactic structure with modern astronomical datasets thus requires simultaneous modeling of both stars and dust throughout the galaxy.
+	Our <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way Galaxy</a> is comprised of roughly 200 billion stars. These stars trace Galactic structure and serve as records of the formation history of the Galaxy. Studying them, however, is challenging because we can't tell, e.g., how old they are or how far away they are from us from just images of the sky (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). This is made even more difficult because the Galaxy is also filled with <a href="https://en.wikipedia.org/wiki/Cosmic_dust">cosmic dust</a>, which <a href="https://en.wikipedia.org/wiki/Extinction_(astronomy)">blocks and ''reddens''</a> the light from many of these stars. We also know many stars are born together in <a href="https://en.wikipedia.org/wiki/Star_cluster">clusters</a> from clouds of <a href="https://en.wikipedia.org/wiki/Molecular_cloud">dense molecular gas</a>.
       </p>
       <p>
-	I work on creating 3-D <a href="http://argonaut.skymaps.info/">dust maps</a> (and star maps) of the Galaxy using data from <a href="https://panstarrs.stsci.edu/">hundreds of millions of stars</a> and <a href="http://waps.cfa.harvard.edu/MIST/">theoretical stellar models</a>.
+	Studying Galactic structure with modern astronomical datasets requires integrating observations of all of these features (stars, dust, gas) from many different datasets (<a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">imaging</a>, <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectroscopy</a>, <a href="https://en.wikipedia.org/wiki/Time_series">time series</a>, etc.) and at many different scales (from isolated stars to <a href="https://en.wikipedia.org/wiki/Dwarf_galaxy">dwarf galaxies</a>). I work on combining these data with <a href="http://waps.cfa.harvard.edu/MIST/">theoretical models</a> to create sophisticated 3-D models of the Milky Way such as <a href="http://argonaut.skymaps.info/">3-D dust maps</a>.
       </p>
       <figure>
 	<img src="dust.png" alt="2-D dust map snapshot">
 	<figcaption>A 2-D snapshot of the cumulative dust (reddening) out to 500 parsecs from the Bayestar17 3-D dust map. Credit: <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1801.03555">Green et al. (2018)</a>.</figcaption>
       </figure>
+	    
+      <h3>
+	<a id="gal-evol" class="anchor" href="#gal-evol" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galaxy Evolution</h3>
+      <p>
+	The <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution">story</a> of how galaxies evolve is complex and involves many moving pieces. Observations suggest galaxies are formed <a href="https://en.wikipedia.org/wiki/Structure_formation">hierarchically</a> through the merger of many smaller galaxies throughout the course of their lifetimes, and their evolution is a complex interplay of <a href="http://astronomy.swin.edu.au/cosmos/S/Secular+Evolution">secular processes</a> involving ongoing star formation and gas physics as well as catastrophic processes such as <a href="https://en.wikipedia.org/wiki/Galaxy_merger">mergers</a> with neighboring galaxies and <a href="https://www.nature.com/collections/dttrsdkjww">feedback</a> from their central supermassive black holes that can rapidly <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution#Galaxy_quenching">"quench"</a> star formation. This leads to an extraordinary diversity of galaxies with varied assembly histories and physical properties.
+      </p>    
+      <p>
+	To understand the details of how galaxies evolve, we need to observe large samples of galaxies across the electromagnetic spectrum in order to constrain their formation and evolutionary histories. I work on developing techniques and tools (see also <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>) designed to model these large galaxy populations.
+      </p>
+      <figure>
+	<img src="PhotoZ2.png" alt="Redshifting of a spectrum">
+	<figcaption>How an observed spectrum evolves as a function of redshift. Credit: <a href="http://www.darkenergysurvey.org/the-des-project/science/supporting-science/photometric-redshifts/">DES</a>.</figcaption>
+      </figure>
+	      
+      <h3>
+	<a id="cosmo" class="anchor" href="#cosmo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cosmology</h3>
+      <p>      
+	Before we can estimate many of the intrinsic properties of a galaxy (luminosity, stellar mass, star formation rate, etc.), we first need to know how far away it is from us. This is most often derived using a galaxy's measured redshift (z), which we can convert to a physical distance based on our current understanding of <a href="https://en.wikipedia.org/wiki/Cosmology">cosmology</a>. While deriving redshifts from spectroscopy is straightforward, obtaining good spectra is expensive and time-consuming. In order to study the evolution of hundreds of millions of galaxies collected in modern surveys, astronomers instead rely on ''photometric redshifts'' (photo-z's) derived solely from multi-band imaging data. Obtaining accurate photometric redshifts are crucial for ongoing/future wide-field surveys (e.g., <a href="http://hsc.mtk.nao.ac.jp/ssp/">HSC</a>, <a href="http://www.darkenergysurvey.org/">DES</a>, <a href="http://kids.strw.leidenuniv.nl/">KiDS</a>, <a href="http://www.euclid-ec.org/">Euclid</a>, <a href="https://www.lsst.org/">LSST</a>, <a href="http://wfirst.gsfc.nasa.gov/">WFIRST</a>), which depend heavily on them to do science.
+      </p>
+      <p>
+	I work on developing quick yet robust probabilistic approaches for inferring photo-z's based on pre-existing spectroscopic/photometric datasets.
+      </p>
+      <figure>
+	<img src="PhotoZ2.png" alt="Redshifting of a spectrum">
+	<figcaption>How an observed spectrum evolves as a function of redshift. Credit: <a href="http://www.darkenergysurvey.org/the-des-project/science/supporting-science/photometric-redshifts/">DES</a>.</figcaption>
+      </figure>
 
       <h3>
 	<a id="sed-fit" class="anchor" href="#sed-fit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SED Fitting</h3>
       <p>
-	Deriving the underlying physical properties of an observed astronomical object requires sophisticated modeling of its <a href="http://coolwiki.ipac.caltech.edu/index.php/SED_plots">spectral energy distribution</a> (SED). When modeling stars and galaxies, most often astronomers fit synthetic model spectra derived from <a href="http://www.sedfitting.org/SED08/Models.html">stellar evolution models</a> to either an observed <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectrum</a> or collection of <a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">broadband photometry</a>. By fitting spectra derived from a variety of underlying physical parameters (age, metallicity, dust, etc.), we are able infer constraints of these parameters based on the observed data.
+	Deriving the underlying physical properties of an observed astronomical object requires sophisticated modeling of its <a href="http://coolwiki.ipac.caltech.edu/index.php/SED_plots">spectral energy distribution</a> (SED). When modeling stars, galaxies, etc., most often astronomers fit synthetic model spectra derived from <a href="http://www.sedfitting.org/SED08/Models.html">stellar evolution models</a> to either an observed <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectrum</a> or collection of <a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">broadband photometry</a>. By fitting spectra derived from a variety of underlying physical parameters, we are able infer constraints of these parameters based on the observed data.
       </p>
       <p>
-	Current SED fitting methods have had difficulty keeping pace with the increasing quantity and quality of data from large surveys. I work on bridging this gap by improving the underlying models, tools, and statistical methods used in SED fitting with large datasets.
+	Current SED fitting methods have had difficulty keeping pace with the increasing quantity and quality of data from large surveys, which now include many bands of photometry, integrated 1-D spectra, and spatially-resolved <a href="https://www.sdss.org/dr13/manga/manga-tutorials/what-is-ifu-spectroscopy/">2-D spectra</a>. These often contain complementary information but are challenging to model. I work on bridging this gap by developing tools and methods that allow these data to be modeled jointly and at scale using a combination of statistics and <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>.
       </p>
       <figure>
 	<img src="sed_ingredients.png" alt="Ingredients of a synthetic SED">
@@ -63,19 +90,6 @@
 	<figcaption>Modeling the distance to the Chameleon cloud.</figcaption>
       </figure>
       
-      <h3>
-	<a id="photo-z" class="anchor" href="#photo-z" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Photometric Redshifts</h3>
-      <p>
-	Before we can estimate many of the intrinsic properties of a galaxy (luminosity, stellar mass, star formation rate, etc.), we first need to know how far away it is from us. This is most often derived using a galaxy's measured redshift (z), which we can convert to a physical distance based on our current understanding of <a href="https://en.wikipedia.org/wiki/Cosmology">cosmology</a>. While deriving redshifts from spectroscopy is straightforward, obtaining good spectra is expensive and time-consuming. In order to study the evolution of hundreds of millions of galaxies collected in modern surveys, astronomers instead rely on ''photometric redshifts'' (photo-z's) derived solely from multi-band imaging data. Obtaining accurate photometric redshifts are crucial for ongoing/future wide-field surveys (e.g., <a href="http://hsc.mtk.nao.ac.jp/ssp/">HSC</a>, <a href="http://www.darkenergysurvey.org/">DES</a>, <a href="http://kids.strw.leidenuniv.nl/">KiDS</a>, <a href="http://www.euclid-ec.org/">Euclid</a>, <a href="https://www.lsst.org/">LSST</a>, <a href="http://wfirst.gsfc.nasa.gov/">WFIRST</a>), which depend heavily on them to do science.
-      </p>
-      <p>
-	I work on developing quick yet robust probabilistic approaches for inferring photo-z's based on pre-existing spectroscopic/photometric datasets.
-      </p>
-      <figure>
-	<img src="PhotoZ2.png" alt="Redshifting of a spectrum">
-	<figcaption>How an observed spectrum evolves as a function of redshift. Credit: <a href="http://www.darkenergysurvey.org/the-des-project/science/supporting-science/photometric-redshifts/">DES</a>.</figcaption>
-      </figure>
-
       <footer class="site-footer">
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. Last updated March 30, 2019.</span>
       </footer>
