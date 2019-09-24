@@ -18,15 +18,22 @@
       <a href="https://joshspeagle.github.io/research/" class="btn">Research</a>
     </section>
 
-    <section class="main-content">
+    <section class="main-content">	    
+      <h3> Astronomy </h3>
       <a href="https://joshspeagle.github.io/research/#milky-way" class="btn">Milky Way</a>
-      <a href="https://joshspeagle.github.io/research/#gal-evol" class="btn">Galaxy Evolution</a>
-      <a href="https://joshspeagle.github.io/research/#cosmo" class="btn">Cosmology</a>
-      <a href="https://joshspeagle.github.io/research/#sed-fit" class="btn">SED Fitting</a>
-      <a href="https://joshspeagle.github.io/research/#inference" class="btn">Inference</a>
+      <a href="https://joshspeagle.github.io/research/#galaxy-evolution" class="btn">Galaxy Evolution</a>
+      <a href="https://joshspeagle.github.io/research/#cosmology" class="btn">Cosmology</a>
+      <a href="https://joshspeagle.github.io/research/#sed-fitting" class="btn">SED Fitting</a>
+      <h3> Statistics </h3>
+      <a href="https://joshspeagle.github.io/research/#sampling-methods" class="btn">Sampling Methods</a>
+      <a href="https://joshspeagle.github.io/research/#data-integration" class="btn">Data Integration</a>
+      <a href="https://joshspeagle.github.io/research/#hierarchical-modeling" class="btn">Hierarchical Modeling</a>
+      <a href="https://joshspeagle.github.io/research/#scalable-inference" class="btn">Scalable Inference</a>
+
+      <h2> Astronomy </h2>
 
       <h3>
-	<a id="gal-struc" class="anchor" href="#milky-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galactic Structure and Dynamics</h3>
+	<a id="milky-way" class="anchor" href="#milky-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galactic Structure and Dynamics</h3>
       <p>
 	Our <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way Galaxy</a> is comprised of roughly 200 billion stars. These stars trace Galactic structure and serve as records of the formation history of the Galaxy. Studying them, however, is challenging because we can't tell, e.g., how old they are or how far away they are from us from just images of the sky (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). This is made even more difficult because the Galaxy is also filled with <a href="https://en.wikipedia.org/wiki/Cosmic_dust">cosmic dust</a>, which <a href="https://en.wikipedia.org/wiki/Extinction_(astronomy)">blocks and ''reddens''</a> the light from many of these stars. We also know many stars are born together in <a href="https://en.wikipedia.org/wiki/Star_cluster">clusters</a> from clouds of <a href="https://en.wikipedia.org/wiki/Molecular_cloud">dense molecular gas</a>.
       </p>
@@ -39,7 +46,7 @@
       </figure>
 	    
       <h3>
-	<a id="gal-evol" class="anchor" href="#gal-evol" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galaxy Evolution</h3>
+	<a id="galaxy-evolution" class="anchor" href="#galaxy-evolution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galaxy Evolution</h3>
       <p>
 	The <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution">story</a> of how galaxies evolve is complex and involves many moving pieces. Observations suggest galaxies are formed <a href="https://en.wikipedia.org/wiki/Structure_formation">hierarchically</a> through the merger of many smaller galaxies throughout the course of their lifetimes, and their evolution is a complex interplay of <a href="http://astronomy.swin.edu.au/cosmos/S/Secular+Evolution">secular processes</a> involving ongoing star formation and gas physics as well as catastrophic processes such as <a href="https://en.wikipedia.org/wiki/Galaxy_merger">mergers</a> with neighboring galaxies and <a href="https://www.nature.com/collections/dttrsdkjww">feedback</a> from their central supermassive black holes that can rapidly <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution#Galaxy_quenching">"quench"</a> star formation. This leads to an extraordinary diversity of galaxies with varied assembly histories and physical properties.
       </p>    
@@ -77,8 +84,49 @@
 	<figcaption>Ingredients of a synthetic SED. Credit: <a href="http://arxiv.org/abs/1301.7095">Conroy (2013)</a>.</figcaption>
       </figure>
 
+      <h2> Statistics </h2>
+	    
       <h3>
-	<a id="inference" class="anchor" href="#inferece" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Statistical Inference</h3>
+	<a id="sampling-methods" class="anchor" href="#sampling-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sampling Methods</h3>
+      <p>
+	Most of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. The models we use can be complex, depending on many parameters and requiring lots of computational effort to generate (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). Furthermore, the data we are comparing too can be noisy, filled with large uncertainties and unknown systematic problems. This can make it difficult to compare our models to data within the context of <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">Bayesian inference</a>.
+      </p>
+      <p>
+	I work on developing, improving, and implementing techniques for performing inference with complex models and large datasets.
+      </p>
+      <figure>
+	<img src="dust-min.png" alt="Modeling the distance to the Chameleon cloud.">
+	<figcaption>Modeling the distance to the Chameleon cloud.</figcaption>
+      </figure>
+	    
+      <h3>
+	<a id="data-integration" class="anchor" href="#data-integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Integration</h3>
+      <p>
+	Most of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. The models we use can be complex, depending on many parameters and requiring lots of computational effort to generate (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). Furthermore, the data we are comparing too can be noisy, filled with large uncertainties and unknown systematic problems. This can make it difficult to compare our models to data within the context of <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">Bayesian inference</a>.
+      </p>
+      <p>
+	I work on developing, improving, and implementing techniques for performing inference with complex models and large datasets.
+      </p>
+      <figure>
+	<img src="dust-min.png" alt="Modeling the distance to the Chameleon cloud.">
+	<figcaption>Modeling the distance to the Chameleon cloud.</figcaption>
+      </figure>
+	          
+      <h3>
+	<a id="hierarchical-modeling" class="anchor" href="#hierarchical-modeling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hierarchical Modeling</h3>
+      <p>
+	Most of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. The models we use can be complex, depending on many parameters and requiring lots of computational effort to generate (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). Furthermore, the data we are comparing too can be noisy, filled with large uncertainties and unknown systematic problems. This can make it difficult to compare our models to data within the context of <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">Bayesian inference</a>.
+      </p>
+      <p>
+	I work on developing, improving, and implementing techniques for performing inference with complex models and large datasets.
+      </p>
+      <figure>
+	<img src="dust-min.png" alt="Modeling the distance to the Chameleon cloud.">
+	<figcaption>Modeling the distance to the Chameleon cloud.</figcaption>
+      </figure>
+	    
+      <h3>
+	<a id="scalable-inference" class="anchor" href="#scalable-inference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sampling Methods</h3>
       <p>
 	Most of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. The models we use can be complex, depending on many parameters and requiring lots of computational effort to generate (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). Furthermore, the data we are comparing too can be noisy, filled with large uncertainties and unknown systematic problems. This can make it difficult to compare our models to data within the context of <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">Bayesian inference</a>.
       </p>
