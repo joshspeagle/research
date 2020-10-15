@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Josh Speagle | University of Toronto</title>
+    <title>Joshua S. Speagle | University of Toronto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,10 +11,10 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Josh Speagle</h1>
+      <h1 class="project-name">Joshua S. Speagle</h1>
       <h2 class="project-tagline">Astrostatistics and Data Science</h2>
       <a href="https://joshspeagle.github.io" class="btn">Home</a>
-      <a href="https://joshspeagle.github.io/bio-cv/" class="btn">Bio & CV</a>
+      <a href="https://joshspeagle.github.io/bio-cv/" class="btn">Personal</a>
       <a href="https://joshspeagle.github.io/research/" class="btn">Research</a>
     </section>
 
@@ -37,65 +37,72 @@
       <h1> Astronomy </h1>
 
       <p>
-    My astronomy research interests are quite broad and generally focus on using large datasets to generate 3-D maps of the sky to constrain the structure, formation, and/or evolution of large populations of astronomical objects. I am particularly interested in developing techniques to jointly model observations from separate (but often complementary) datasets.
+    My astronomy research interests are quite broad but are focused around trying to understand how galaxies like our own Milky Way behave, form, and evolve. I focus on using large datasets to generate maps of billions of astronomical objects and the diffuse "stuff" within and between them. I am particularly interested in developing techniques to jointly model observations from separate (but often complementary) datasets such as (<a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">imaging</a>, <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectroscopy</a>, and <a href="https://en.wikipedia.org/wiki/Time_series">time series</a>.
       </p>
 
       <h2>
-	<a id="milky-way" class="anchor" href="#milky-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galactic Structure and Dynamics</h2>
+	<a id="milky-way" class="anchor" href="#milky-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Milky Way</h2>
       <p>
-	Our <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way Galaxy</a> is comprised of roughly 200 billion stars. These stars trace Galactic structure and serve as records of the formation history of the Galaxy. Studying them, however, is challenging because we can't tell, e.g., how old they are or how far away they are from us from just images of the sky (see <a href="https://joshspeagle.github.io/research/#sed-fit">SED Fitting</a>). This is made even more difficult because the Galaxy is also filled with <a href="https://en.wikipedia.org/wiki/Cosmic_dust">cosmic dust</a>, which <a href="https://en.wikipedia.org/wiki/Extinction_(astronomy)">blocks and ''reddens''</a> the light from many of these stars. We also know many stars are born together in <a href="https://en.wikipedia.org/wiki/Star_cluster">clusters</a> from clouds of <a href="https://en.wikipedia.org/wiki/Molecular_cloud">dense molecular gas</a>.
+	Our own <a href="https://en.wikipedia.org/wiki/Milky_Way">Milky Way Galaxy</a> is comprised of roughly 200 billion stars. These stars trace Galactic structure and serve as records of the formation history of the Galaxy. Studying them, however, is challenging because we can't tell, e.g., how old they are or how far away they are from us from just images of the sky. This is made even more difficult because the Galaxy is also filled with <a href="https://en.wikipedia.org/wiki/Cosmic_dust">cosmic dust</a>, which <a href="https://en.wikipedia.org/wiki/Extinction_(astronomy)">blocks and ''reddens''</a> the light from many of these stars. We also know many stars are born together in <a href="https://en.wikipedia.org/wiki/Star_cluster">clusters</a> from clouds of <a href="https://en.wikipedia.org/wiki/Molecular_cloud">dense molecular gas</a> in a complicated, hierarchical process.
       </p>
+
       <p>
-	Studying Galactic structure with modern astronomical datasets requires integrating observations of all of these features (stars, dust, gas) from many different datasets (<a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">imaging</a>, <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectroscopy</a>, <a href="https://en.wikipedia.org/wiki/Time_series">time series</a>, etc.) and at many different scales (from isolated stars to <a href="https://en.wikipedia.org/wiki/Dwarf_galaxy">dwarf galaxies</a>). I am interested in combining these data with <a href="http://waps.cfa.harvard.edu/MIST/">theoretical models</a> to create sophisticated 3-D models of the Milky Way such as <a href="http://argonaut.skymaps.info/">3-D dust maps</a>.
+	Studying Galactic structure with modern astronomical datasets requires integrating observations of all of these features (stars, dust, gas, etc.) from many different datasets and at many different scales. I am interested in combining these data with <a href="http://waps.cfa.harvard.edu/MIST/">theoretical</a> and <a href="https://arxiv.org/abs/2006.16258">data-driven</a> models to create sophisticated models of the Milky Way such as <a href="http://argonaut.skymaps.info/">3-D dust maps</a>.
       </p>
       <figure>
-	<img src="dust.png" alt="2-D dust map snapshot">
-	<figcaption>A 2-D snapshot of the cumulative dust (reddening) out to 500 parsecs from the Bayestar17 3-D dust map. Credit: <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1801.03555">Green et al. (2018)</a>.</figcaption>
+	<img src="dust-local.png" alt="2-D map of local dust">
+	<figcaption>A projected 2-D map of the distribution of dust around the Sun. Credit: <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..51Z/abstract">Zucker, Speagle et al. (2020)</a>.</figcaption>
       </figure>
-
 
       <h2>
 	<a id="galaxy-evolution" class="anchor" href="#galaxy-evolution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Galaxy Evolution</h2>
+
       <p>
-	The <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution">story</a> of how galaxies evolve is complex and involves many moving pieces. Observations suggest galaxies are formed <a href="https://en.wikipedia.org/wiki/Structure_formation">hierarchically</a> through the merger of many smaller galaxies throughout the course of their lifetimes, and their evolution is a complex interplay of <a href="http://astronomy.swin.edu.au/cosmos/S/Secular+Evolution">secular processes</a> involving ongoing star formation and gas physics as well as catastrophic processes such as <a href="https://en.wikipedia.org/wiki/Galaxy_merger">mergers</a> with neighboring galaxies and <a href="https://www.nature.com/collections/dttrsdkjww">feedback</a> from their central supermassive black holes that can rapidly <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution#Galaxy_quenching">"quench"</a> star formation. This leads to an extraordinary diversity of galaxies with varied assembly histories and physical properties.
-      </p>    
-      <p>
-	To understand the details of how galaxies evolve, we need to observe large samples of galaxies across the electromagnetic spectrum in order to constrain their formation and evolutionary histories. Astronomers have had difficulty keeping pace with the increasing quantity and quality of data from large surveys, which now include many bands of <a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">broadband photometry</a>, 1-D <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectra</a>, and spatially-resolved <a href="https://www.sdss.org/dr13/manga/manga-tutorials/what-is-ifu-spectroscopy/">2-D spectra</a>. These often contain complementary information but are challenging to model. I am interested in developing techniques and tools designed to model these data and the corresponding galaxy populations.
+	The <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution">story</a> of how galaxies form and evolve is complex and involves many moving pieces. Observations suggest galaxies are formed <a href="https://en.wikipedia.org/wiki/Structure_formation">hierarchically</a> through the merger of many smaller galaxies throughout the course of their lifetimes, and their evolution is a complex interplay of <a href="http://astronomy.swin.edu.au/cosmos/S/Secular+Evolution">secular processes</a> involving ongoing star formation and gas physics as well as catastrophic processes such as <a href="https://en.wikipedia.org/wiki/Galaxy_merger">mergers</a> with neighboring galaxies and <a href="https://www.nature.com/collections/dttrsdkjww">feedback</a> from their central supermassive black holes that can rapidly <a href="https://en.wikipedia.org/wiki/Galaxy_formation_and_evolution#Galaxy_quenching">"quench"</a> star formation. This leads to an extraordinary diversity of galaxies with varied assembly histories and physical properties.
       </p>
+
+      <p>
+	To understand the details of how galaxies evolve, we need to observe large samples of galaxies across the electromagnetic spectrum in order to constrain their formation and evolutionary histories. Astronomers have had difficulty keeping pace with the increasing quantity and quality of data from large surveys, which now include images taken at many wavelengths, 1-D and 2-D spectroscopy, and spatially-resolved <a href="https://www.sdss.org/dr13/manga/manga-tutorials/what-is-ifu-spectroscopy/">IFU</a> data. These often contain complementary information but are challenging to model. I am interested in developing techniques and tools designed to model these data to learn more about the underlying galaxy and stellar populations.
+      </p>
+
       <figure>
 	<img src="speagle-et-al-14.PNG" alt="Evolution of star-forming galaxies across cosmic time">
 	<figcaption>Evolution of star-forming galaxies across cosmic time based on a compilation of 25 studies. Credit: <a href="https://arxiv.org/abs/1405.2041">Speagle et al. (2014)</a>.</figcaption>
       </figure>
 
-
       <h2>
 	<a id="cosmology" class="anchor" href="#cosmology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cosmology and Large-Scale Structure</h2>
+
       <p>      
-    The growth of large-scale structure and the evolution of the Universe at large is mysterious and complex. We now know that baryonic matter (i.e. "normal stuff") only makes up 5% of the energy budget of the Universe. Of the remaining 95%, 25% is comprised of "dark matter" and the remaining 70% is made up of "dark energy". While we can infer the presence of dark matter through its gravitational effects, dark energy only can be observed by studying the evolution of the Universe on the largest of scales over long periods of time. 
+    The growth of large-scale structure and the evolution of the Universe at large is mysterious and complex. We now know that baryonic matter (i.e. "normal stuff") only makes up 5% of the energy budget of the Universe. Of the remaining 95%, 25% is comprised of "dark matter" and the remaining 70% is made up of "dark energy". While we can infer the presence of dark matter through its gravitational effects, dark energy only can be observed by studying the evolution of the Universe on the largest of scales over long periods of time. Galaxy evolution takes place against the backdrop of the <a href="https://blogs.scientificamerican.com/sa-visual/the-beautiful-complexity-of-the-cosmic-web/">"cosmic web"</a> of large-scale structure whose properties depend on all of these various components.
       </p>
+
       <p>
-    One powerful method for probing cosmology is <a href="https://en.wikipedia.org/wiki/Weak_gravitational_lensing">gravitational lensing</a>, where the light from distant background objects is warped by intervening structures. This warping is sensitive to many features we are interested in studying and so allows us (in theory) to reconstruct them. This reconstruction, however, is often extremely challenging and depends heavily on knowing the distances to many of these "background" sources. I am interested in developing quick yet robust probabilistic approaches to derive distances to hundreds of millions of galaxies collected in modern surveys along with methods to subsequently incorporate them into cosmological analyses.
+    Improving our understanding of cosmology requires knowing the distances to many of galaxies that trace these large-scale structures. I am interested in developing quick yet robust probabilistic approaches to derive distances to the billions of galaxies collected in modern surveys along with methods to subsequently incorporate them into cosmological analyses.
       </p>
+
       <figure>
 	<img src="hsc_cosmic_shear.png" alt="Cosmological constraints from HSC">
 	<figcaption>Cosmological constraints from <a href="https://en.wikipedia.org/wiki/Weak_gravitational_lensing#Cosmic_shear">cosmic shear</a> measurements from the <a href="https://hsc.mtk.nao.ac.jp/ssp/">HSC-SSP</a> Survey. Credit: <a href="https://arxiv.org/abs/1809.09148">Hikage et al. (2019)</a>.</figcaption>
       </figure>
 
-
       <h1> Statistics </h1>
 
       <p>
-    My statistics research interests are broadly oriented around performing robust statistical inference on large, diverse datasets. This requires developing frameworks to jointly model separate (but complementary) observations, scalable methods to implement them, and sampling methods to explore the inferred distribution of model parameters.
+    My statistics research interests are broadly centered around performing statistical inference over large, diverse datasets. This requires developing frameworks to jointly model separate (but complementary) observations, scalable methods to implement them, and sampling methods to explore the inferred distribution of model parameters.
       </p>
 
       <h2>
 	<a id="data-integration" class="anchor" href="#data-integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Integration</h2>
+
       <p>
 	Modern science has entered the era of <a href="https://en.wikipedia.org/wiki/Big_data">"big data"</a>, with large datasets commonly available across a host of scientific domains from <a href="https://en.wikipedia.org/wiki/Human_Genome_Project">genomics</a> to <a href="https://opportunityinsights.org/">economics</a> to <a href="https://www.sdss.org/">astronomy</a>. These datasets often overlap with each other while probing complementary sets of information, and so <a href="https://en.wikipedia.org/wiki/Joint_probability_distribution">jointly modeling</a> them often enables us to draw better statistical inferences.
       </p>
+
       <p>
-	 While straightforward in theory, this type of <a href="https://en.wikipedia.org/wiki/Data_integration">"data integration"</a> is often difficult since many of these datasets (e.g., <a href="https://en.wikipedia.org/wiki/Photometry_(astronomy)">photometry</a> versus <a href="https://en.wikipedia.org/wiki/Astronomical_spectroscopy">spectroscopy</a>) possess widely different characteristics, favor different sub-populations, and often only partially overlap. I am interested in developing frameworks and methods that help to deal with these issues with applications in astronomy (e.g., modeling the <a href="https://joshspeagle.github.io/research/#milky-way">Milky Way</a>).
+	 While straightforward in theory, this type of <a href="https://en.wikipedia.org/wiki/Data_integration">"data integration"</a> in astronomy is often difficult since many of these datasets possess widely different characteristics, trace different sub-populations, depend on different physical processes, and often only partially overlap. I am interested in developing methods to deal with these types of data to improve our understanding of the <a href="https://joshspeagle.github.io/research/#milky-way">Milky Way</a>) and <a href="https://joshspeagle.github.io/research/#galaxy-evolution">galaxy evolution</a>).
       </p>
+
       <figure>
 	<img src="zucker_perseus.png" alt="Distances across the Perseus cloud.">
 	<figcaption>Distance and velocity estimates to various regions of the Perseus cloud derived through a combination of observations of stars, dust, and gas. Credit: <a href="https://arxiv.org/abs/1803.08931">Zucker et al. (2018)</a>. </figcaption>
@@ -103,32 +110,38 @@
 
       <h2>
 	<a id="scalable-inference" class="anchor" href="#scalable-inference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scalable Inference</h2>
+
       <p>
 	Analyzing large datasets has increasingly become the domain of <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> methods. However, these methods tend to have difficulty deriving estimates of the uncertainty and reliability of their predictions and can often be difficult to interpret. While performing statistical inference with interpretable models can help to address these concerns, many methods are often prohibitively slow and therefore limited to small datasets.
       </p>
+
       <p>
-	In order to address these concerns, I am interested in combining elements of machine learning and statistical modeling to develop quick yet robust approaches for "scalable" inference that can be applied to large datasets (such as those used in <a href="https://joshspeagle.github.io/research/#cosmology">cosmology</a>).
+	In order to address these concerns, I am interested in combining elements of machine learning and statistical modeling to develop quick yet robust approaches for "scalable" inference that can be applied to large datasets. I am especially keen on incorporating fundamental physics (e.g., <a href="https://en.wikipedia.org/wiki/Doppler_effect">doppler shifts</a>), geometry (e.g., <a href="https://www.quantamagazine.org/an-idea-from-physics-helps-ai-see-in-higher-dimensions-20200109/">symmetries</a>), and observational effects (e.g., <a href="https://en.wikipedia.org/wiki/Noise_(electronics)">noise</a>, <a href="https://en.wikipedia.org/wiki/Censoring_(statistics)">censoring</a>) into this process.
       </p>
+
       <figure>
 	<img src="kmcknn.png" alt="Workflow combining kNN with SED fitting.">
-	<figcaption>A schematic showing a hybrid approach that combined statistical modeling and machine learning to derive "photometric redshifts" to galaxies. Credit: <a href="https://arxiv.org/abs/1906.05876">Speagle et al. (2019)</a>.</figcaption>
+	<figcaption>A schematic showing a hybrid approach that combined statistical modeling and machine learning to derive distances to galaxies. Credit: <a href="https://arxiv.org/abs/1906.05876">Speagle et al. (2019)</a>.</figcaption>
       </figure>
    
       <h2>
 	<a id="sampling-methods" class="anchor" href="#sampling-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sampling Methods</h2>
+
       <p>
 	Much of science involves using data to test, constrain, and/or rule out various models that represent our current understanding of how we think things work. These models are often complex, involving on many parameters and requiring lots of computational effort to generate. The constraints on these parameters given our data (and possibly <a href="https://en.wikipedia.org/wiki/Bayesian_inference/">prior beliefs</a>) are often unknown (and can sometimes be <a href="https://en.wikipedia.org/wiki/Multimodal_distribution">multi-modal</a>), requiring the use of numerical techniques to estimate them.
       </p>
+
       <p>
-	One class of techniques for estimating these constraints relies on generating random samples from the distribution via computationally tractable numerical simulation. These are known as a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">"Monte Carlo"</a> approaches, and include methods such as <a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">Markov Chain Monte Carlo</a> that are widely used throughout the sciences. I am interested in developing efficient sampling strategies that can be applied to multi-modal distributions (such as those seen when <a href="https://joshspeagle.github.io/research/#galaxy-evolution">modeling galaxies</a>) to estimate parameters and perform model comparison.
+	One class of techniques for estimating these constraints relies on generating random samples from the distribution via computationally tractable numerical simulation. These are known as a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">"Monte Carlo"</a> approaches, and include methods such as <a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">Markov Chain Monte Carlo</a> that are widely used throughout the sciences. I am interested in developing efficient sampling strategies that can be applied to multi-modal distributions to estimate parameters and perform model comparison.
       </p>
+
       <figure>
 	<img src="dynesty.gif" alt="An animation of dynesty in action.">
-	<figcaption>An animated demonstration of the <a href="https://en.wikipedia.org/wiki/Nested_sampling_algorithm">Nested Sampling</a> code <a href="https://github.com/joshspeagle/allsky">"dynesty"</a> (<a href="https://arxiv.org/abs/1904.02180">Speagle 2019</a>). Credit: <a href="https://dynesty.readthedocs.io/en/latest/">dynesty documentation</a>. </figcaption>
+	<figcaption>An animated demonstration of the <a href="https://en.wikipedia.org/wiki/Nested_sampling_algorithm">Nested Sampling</a> code <a href="https://github.com/joshspeagle/allsky">"dynesty"</a> (<a href="https://arxiv.org/abs/1904.02180">Speagle 2020</a>). Credit: <a href="https://dynesty.readthedocs.io/en/latest/">dynesty documentation</a>. </figcaption>
       </figure>
       
       <footer class="site-footer">
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. Last updated August 17, 2020.</span>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. Last updated October 15, 2020.</span>
       </footer>
 
     </section>
